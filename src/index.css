@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: rgb(240,243,255);
+  background: linear-gradient(180deg, rgba(240,243,255,1) 0%, rgba(163,216,255,1) 100%);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.car{
+  position: relative;
+  z-index:0;
+}
+
+.wheels{
+  position: relative;
+  z-index:-1;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.wrapword {
+  white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+  white-space: -webkit-pre-wrap;          /* Chrome & Safari */ 
+  white-space: -pre-wrap;                 /* Opera 4-6 */
+  white-space: -o-pre-wrap;               /* Opera 7 */
+  white-space: pre-wrap;                  /* CSS3 */
+  word-wrap: break-word;                  /* Internet Explorer 5.5+ */
+  word-break: break-all;
+  white-space: normal;
+}
