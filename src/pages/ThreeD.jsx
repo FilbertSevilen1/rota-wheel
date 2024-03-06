@@ -5,6 +5,8 @@ import brandHonda from "../assets/brand/honda.webp";
 import brandLamborghini from "../assets/brand/lamborghini.webp";
 import brandMercedesBenz from "../assets/brand/mercedes-benz.webp";
 import brandSubaru from "../assets/brand/subaru.webp";
+import brandToyota from "../assets/brand/toyota.webp"
+import brandMitsubishi from '../assets/brand/mitsubishi.webp'
 
 //Car
 import carBmw1Color1 from "../assets/cars/carbmw1.webp";
@@ -14,6 +16,16 @@ import carLamborghini1Color2 from "../assets/cars/carangled2.webp";
 import carLamborghini1Color3 from "../assets/cars/carangled3.webp";
 import carLamborghini1Color4 from "../assets/cars/carangled4.webp";
 import carLamborghini1Color5 from "../assets/cars/carangled5.webp";
+
+import carHonda1Color1 from '../assets/cars/carhonda1.webp'
+import carHonda1Color2 from '../assets/cars/carhonda2.webp'
+import carHonda1Color3 from '../assets/cars/carhonda3.webp'
+import carHonda1Color4 from '../assets/cars/carhonda4.webp'
+import carHonda1Color5 from '../assets/cars/carhonda5.webp'
+import carHonda1Color6 from '../assets/cars/carhonda6.webp'
+import carHonda1Color7 from '../assets/cars/carhonda7.webp'
+import carHonda1Color8 from '../assets/cars/carhonda8.webp'
+import carHonda1Color9 from '../assets/cars/carhonda9.webp'
 
 import carFerrari1Color1 from "../assets/cars/carangled6.webp";
 import carFerrari1Color2 from "../assets/cars/carangled7.webp";
@@ -27,6 +39,26 @@ import carSubaru1Color2 from "../assets/cars/carsubaru2.webp";
 import carSubaru1Color3 from "../assets/cars/carsubaru3.webp";
 import carSubaru1Color4 from "../assets/cars/carsubaru4.webp";
 import carSubaru1Color5 from "../assets/cars/carsubaru5.webp";
+
+import carToyota1Color1 from '../assets/cars/cartoyotatundra1.webp'
+import carToyota1Color2 from '../assets/cars/cartoyotatundra2.webp'
+import carToyota1Color3 from '../assets/cars/cartoyotatundra3.webp'
+import carToyota1Color4 from '../assets/cars/cartoyotatundra4.webp'
+import carToyota1Color5 from '../assets/cars/cartoyotatundra5.webp'
+import carToyota1Color6 from '../assets/cars/cartoyotatundra6.webp'
+import carToyota1Color7 from '../assets/cars/cartoyotatundra7.webp'
+import carToyota1Color8 from '../assets/cars/cartoyotatundra8.webp'
+import carToyota1Color9 from '../assets/cars/cartoyotatundra9.webp'
+
+import carMitsubishi1Color1 from '../assets/cars/carmitsubishi1.webp'
+import carMitsubishi1Color2 from '../assets/cars/carmitsubishi2.webp'
+import carMitsubishi1Color3 from '../assets/cars/carmitsubishi3.webp'
+import carMitsubishi1Color4 from '../assets/cars/carmitsubishi4.webp'
+import carMitsubishi1Color5 from '../assets/cars/carmitsubishi5.webp'
+import carMitsubishi1Color6 from '../assets/cars/carmitsubishi6.webp'
+import carMitsubishi1Color7 from '../assets/cars/carmitsubishi7.webp'
+import carMitsubishi1Color8 from '../assets/cars/carmitsubishi8.webp'
+import carMitsubishi1Color9 from '../assets/cars/carmitsubishi9.webp'
 
 //Wheel
 import wheel1 from "../assets/wheels/2024 02 16 - photo rota/ATLAS 1/ATLAS 1 17_17x8.5_4_5x139.7_106.1_ RL YMH BLK/plain/DSCF7736 1nobg.webp";
@@ -135,11 +167,11 @@ function ThreeD() {
       brandName: "Ferrari",
       brandImage: brandFerrari,
     },
-    // {
-    //   brandId: 3,
-    //   brandName: "Honda",
-    //   brandImage: brandHonda,
-    // },
+    {
+      brandId: 3,
+      brandName: "Honda",
+      brandImage: brandHonda,
+    },
     {
       brandId: 4,
       brandName: "Lamborghini",
@@ -154,6 +186,16 @@ function ThreeD() {
       brandId: 6,
       brandName: "Subaru",
       brandImage: brandSubaru,
+    },
+    {
+      brandId: 7,
+      brandName: "Toyota",
+      brandImage: brandToyota,
+    },
+    {
+      brandId: 8,
+      brandName: "Mitsubishi",
+      brandImage: brandMitsubishi,
     },
   ]);
   const [brand, setBrand] = useState(listBrand[0]);
@@ -638,6 +680,22 @@ function ThreeD() {
       ],
     },
     {
+      brandId: 3,
+      carImage: carHonda1Color1,
+      carTemplate: 2,
+      carColorImage: [
+        carHonda1Color1,
+        carHonda1Color2,
+        carHonda1Color3,
+        carHonda1Color4,
+        carHonda1Color5,
+        carHonda1Color6,
+        carHonda1Color7,
+        carHonda1Color8,
+        carHonda1Color9,
+      ],
+    },
+    {
       brandId: 4,
       carImage: carLamborghini1Color1,
       carTemplate: 3,
@@ -659,6 +717,38 @@ function ThreeD() {
         carSubaru1Color3,
         carSubaru1Color4,
         carSubaru1Color5,
+      ],
+    },
+    {
+      brandId: 7,
+      carImage: carToyota1Color1,
+      carTemplate: 6,
+      carColorImage: [
+        carToyota1Color1,
+        carToyota1Color2,
+        carToyota1Color3,
+        carToyota1Color4,
+        carToyota1Color5,
+        carToyota1Color6,
+        carToyota1Color7,
+        carToyota1Color8,
+        carToyota1Color9,
+      ],
+    },
+    {
+      brandId: 8,
+      carImage: carMitsubishi1Color1,
+      carTemplate: 7,
+      carColorImage: [
+        carMitsubishi1Color1,
+        carMitsubishi1Color2,
+        carMitsubishi1Color3,
+        carMitsubishi1Color4,
+        carMitsubishi1Color5,
+        carMitsubishi1Color6,
+        carMitsubishi1Color7,
+        carMitsubishi1Color8,
+        carMitsubishi1Color9,
       ],
     },
   ]);
@@ -747,12 +837,12 @@ function ThreeD() {
           <button
             className={`${
               item == brand ? "scale-105 bg-gray-200" : "scale-100"
-            } w-16 h-16 my-4 shadow-md rounded-xl transition-all active:scale-95 font-bold`}
+            } w-16 h-16 my-4 shadow-md rounded-xl transition-all active:scale-95 font-bold flex justify-center items-center`}
             onClick={() => setCarBrand(item)}
           >
             <img
               src={item.brandImage}
-              className="w-16 h-16 rounded-xl contain"
+              className="w-14 h-14 rounded-xl contain"
             ></img>
           </button>
         );
@@ -819,7 +909,7 @@ function ThreeD() {
                 <img
                   src={wheel}
                   className="flex 
-                  w-[4.4rem] h-[5.2rem] mr-[156.5px]
+                  w-[4.4rem] h-[5.2rem] mr-[151.5px]
                   md:w-[8.8rem] md:h-[10.4rem] md:mr-[303px]
                   rounded-full relative  wheels bg-gray-950"
                 ></img>
@@ -852,6 +942,37 @@ function ThreeD() {
                   md:w-[9.2rem] md:h-[12.9rem] md:mr-[414px] 
                   rounded-full relative  
                   wheels bg-gray-950"
+                ></img>
+              </div>
+            </div>
+          </div>
+        );
+
+        case 2:
+        return (
+          <div className="">
+            <img
+              src={car}
+              className=" w-full car shadow-md rounded-2xl"
+            ></img>
+            <div className="flex justify-between h-auto mx-auto relative">
+              <div className="mt-[-125px] md:mt-[-250px]">
+                <img
+                  src={wheel}
+                  className="flex 
+                  w-[3.3rem] h-[4.5rem] ml-[25px]
+                  md:w-[6.6rem] md:h-[9rem] md:ml-[50px] 
+                  rounded-full relative wheels bg-gray-950"
+                ></img>
+              </div>
+              <div className="mt-[-109px] md:mt-[-218px]">
+                <img
+                  src={wheel}
+                  className="flex 
+                  w-[4.6rem] h-[4.8rem] mr-[117px] 
+                  md:w-[9.2rem] md:h-[9.6rem] md:mr-[234px] 
+                  rounded-full relative wheels
+                   bg-gray-950"
                 ></img>
               </div>
             </div>
@@ -919,6 +1040,70 @@ function ThreeD() {
             </div>
           </div>
         );
+
+        case 6:
+          return (
+            <div className="">
+              <img
+                src={car}
+                className=" w-full car shadow-md rounded-2xl"
+              ></img>
+              <div className="flex justify-between h-auto mx-auto relative">
+                <div className="mt-[-123px] md:mt-[-246px]">
+                  <img
+                    src={wheel}
+                    className="flex 
+                    w-[2.2rem] h-[4.0rem] ml-[42.5px] 
+                    md:w-[4.4rem] md:h-[8.0rem] md:ml-[85px] 
+                    
+                    rounded-full relative  wheels bg-gray-950"
+                  ></img>
+                </div>
+                <div className="mt-[-110px] md:mt-[-220px]">
+                  <img
+                    src={wheel}
+                    className="flex 
+                    w-[3.6rem] h-[5.2rem] mr-[169px] 
+                    md:w-[7.2rem] md:h-[10.4rem] md:mr-[338px] 
+                    rounded-full relative 
+                    wheels bg-gray-950"
+                  ></img>
+                </div>
+              </div>
+            </div>
+          );
+
+          case 7:
+          return (
+            <div className="">
+              <img
+                src={car}
+                className=" w-full car shadow-md rounded-2xl"
+              ></img>
+              <div className="flex justify-between h-auto mx-auto relative">
+                <div className="mt-[-123px] md:mt-[-260px]">
+                  <img
+                    src={wheel}
+                    className="flex 
+                    w-[2.2rem] h-[4.0rem] ml-[42.5px] 
+                    md:w-[4.8rem] md:h-[9.4rem] md:ml-[35px] 
+                    
+                    rounded-full relative  wheels bg-gray-950"
+                  ></img>
+                </div>
+                <div className="mt-[-110px] md:mt-[-242px]">
+                  <img
+                    src={wheel}
+                    className="flex 
+                    w-[3.6rem] h-[5.2rem] mr-[169px] 
+                    md:w-[6.8rem] md:h-[10.8rem] md:mr-[450px] 
+                    rounded-full relative 
+                    wheels bg-gray-950"
+                  ></img>
+                </div>
+              </div>
+            </div>
+          );
 
       default:
         break;
